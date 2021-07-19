@@ -1,12 +1,30 @@
 .filter-section {
-  padding-top: 94px;
-  padding-bottom: 50px;}
+  padding-top: 60px;
+  padding-bottom: 40px;
+  @media screen  and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-bottom: -15px;
+  @media screen  and (min-width: 768px) {
+    justify-content: center;
+    }
+  &__item {
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
+  &__item:not(:last-child) {
+    @media screen  and (min-width: 768px) {
+    margin-right: 8px;
+    margin-left: 0;
+    margin-bottom: 0;
+    }
+  }
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
-}

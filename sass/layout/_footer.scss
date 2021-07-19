@@ -9,6 +9,24 @@ footer {
   background: #2f303a;
 }
 
+.footer-list {
+  @media screen  and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+  
+
+}
+
+.address-box {
+  margin: 0 109px;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen  and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
 .address__text {
   color: $common-bg-color;
   font-style: normal;
@@ -16,7 +34,7 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__link {
@@ -36,7 +54,7 @@ footer {
 }
 
 .address__link:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__link:focus,
@@ -44,13 +62,18 @@ footer {
   color: $accent-color;
 }
 
-.footer-list {
-  display: flex;
-  align-items: center;
-}
+
 
 .social-list {
-  margin-left: 70px;
+  margin: 0 122px 60px;
+  text-align: center;
+  @media screen  and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen  and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 70px;
+  }
   &__title {
     margin: 0;
     font-weight: 700;
@@ -83,4 +106,16 @@ footer {
   max-width: 100%;
   max-height: 100%;
   fill: $common-bg-color;
+}
+
+.footer-tab {
+  @media screen  and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  @media screen  and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
