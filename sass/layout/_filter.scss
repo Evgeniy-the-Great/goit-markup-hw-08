@@ -1,0 +1,12 @@
+.filter-section {
+  padding-top: 94px;
+  padding-bottom: 50px;}
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter__item + .filter__item {
+  margin-left: 8px;
+}

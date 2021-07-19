@@ -1,0 +1,24 @@
+.button {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  color: $secondary-text-color;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  box-shadow: none;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing);
+  &:focus,
+  &:hover {
+  background-color: $accent-color;
+  color: $common-bg-color;
+  box-shadow: $card-shadow;
+  }
+}
+

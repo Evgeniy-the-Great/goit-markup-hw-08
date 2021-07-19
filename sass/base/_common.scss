@@ -1,0 +1,27 @@
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background: $common-bg-color;
+  color: $main-text-color;
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+}
+
+header {
+  border-bottom: 1px solid $border-bottom-colour;
+}
+main {
+  border-top: 1px solid $border-bottom-colour;
+}
+
+.list,
+.project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
