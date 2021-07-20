@@ -3,13 +3,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
-
   background-color: #FFFFFF;
   box-shadow: $card-shadow;
   border-radius: 4px;
-  z-index: 2;
+  width: 450px;
+  height: 609px;
+  @media screen  and (min-width: 1200px){
+  min-width: 528px;
+  min-height: 581px;
+
+  
+  
+  }
 }
 
 .backdrop {
@@ -146,11 +151,11 @@
 
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing);
+  transition-timing-function: $transition-timing;
   
   &:focus,
   &:hover {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -171,17 +176,22 @@
   align-items: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--main-text-color);
+  font-size: 11px;
+  line-height: 1.17;
+  color: $main-text-color;
+  @media screen  and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
 }
 
 .checkbox__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--accent-color);
+  font-size: 12px;
+  line-height: 1.17;
+  color: $accent-color;
 }
 
 .checkbox__span {
@@ -196,10 +206,10 @@
 }
 
 .checkbox__icon {
-  fill: var(--common-bg-color);
+  fill: $common-bg-color;
 }
 
 .checkbox__input:checked + .checkbox__title .checkbox__span {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
 }
