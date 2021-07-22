@@ -708,6 +708,7 @@ header {
 }
 
 .work-list__thumb {
+  z-index: -1;
   position: relative;
   width: 370px;
 }
@@ -1214,6 +1215,7 @@ footer {
 }
 
 .project-list__thumb {
+  z-index: -1;
   position: relative;
   overflow: hidden;
 }
